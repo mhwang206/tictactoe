@@ -2,6 +2,7 @@
 <head>
 	<script type="text/javascript" src="tictactoe.js"></script>
 	<link rel="stylesheet" type="text/css" href="tictactoe.css">
+	<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
 
 	<title></title>
 
@@ -14,44 +15,60 @@
 Tic Tac Toe 
 </h1>
 
-<div class="player">
+<div class="player1", id="scoreboard">
 	Player 1 
-	Player 2
+	<br/>
+	3
+</div>
 
+<div class="player2", id="scoreboard">
+	Player 2
+	<br/>
+	2
 </div>
 
 
 <div class="grid">
-	<div class="box">
-	x
+	<div class="box" id="box1">
+	<button onclick="boxclicked(1)">Click</button>
+	<span class="display">x</span>
 	</div>
-	<div class="box">
-	x
-	</div>
-	<div class="box">
-	x
-	</div>
-	</br>
-	<div class="box">
-	x
-	</div>
-	<div class="box">
-	x
-	</div>
-	<div class="box">
-	x
-	</div>
-	</br>
-	<div class="box">
-	x
-	</div>
-	<div class="box">
-	x
-	</div>
-	<div class="box">
+
+	<div class="box" id="box2">
+	<button onclick="boxclicked(2)">Click</button>
 	x
 	</div>
 
+	<div class="box" id="box3">
+	<button onclick="boxclicked(3)">Click</button>
+	x
+	</div>
+</br>
+
+	<div class="box" id="box4">
+	<button onclick="boxclicked(4)">Click</button>
+	</div>
+
+	<div class="box" id="box5">
+	<button onclick="boxclicked(5)">Click</button>
+	</div>
+
+	<div class="box" id="box6">
+	<button onclick="boxclicked(6)">Click</button>
+	</div>
+</br>
+
+	<div class="box" id="box7">
+	<button onclick="boxclicked(7)">Click</button>
+	</div>
+	
+	<div class="box" id="box8">
+	<button onclick="boxclicked(8)">Click</button>
+	</div>
+
+	<div class="box" id="box9">
+	<button onclick="boxclicked(9)">Click</button>
+	</div>
 </div>
 
 
