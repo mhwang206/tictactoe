@@ -1,5 +1,4 @@
 
-
 var boy = true;
 // Array of spaces that will change/moves
 var moves = [[null,null,null],[null,null,null],[null,null,null]];
@@ -10,12 +9,15 @@ for(var i = 1; i<10; i++) {
 	cell.onclick = clickstuff;
 }
 
+if (!window.console) console = {};
+console.log = console.log || function(){};
+console.warn = console.warn || function(){};
+console.error = console.error || function(){};
+console.info = console.info || function(){};
+
 // defines function
 function clickstuff(){
 
-  // makes sure there is nothing in cell
-  // this = "THE DIV" -- whatever is assigned on line 11
-  // if you had set line 11 = image, "this" would refer to "THE IMAGE"
   	if (this.innerHTML[0]!= "<"){ 
 	  	//boxnum is range from 0-8
 		boxnum=this.id[3]-1
@@ -24,6 +26,7 @@ function clickstuff(){
 		column=boxnum % 3
     	if (boy)
    		{
+
   			this.innerHTML='<img src="http://i.imgur.com/jJT1Buv.jpg?1" />';
    		   // figures out which row and column [][], referencing the var moves and saves as x
      		moves [row][column] = "x";
@@ -81,7 +84,9 @@ function checkWin(){
   if (moves [2][0]=="o" && moves [1][1]=="o" && moves [0][2]=="o")
     alert("O wins!")
 
+
 }
+
 
 function resetbutton()
 
